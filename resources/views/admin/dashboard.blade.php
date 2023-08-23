@@ -22,7 +22,7 @@
                 </div>
             </div>
             <div class="col-1  text-center my-5">
-                <a href="{{ Route('admin.projects.index') }}" class="btn btn-primary">Projects</a>
+                <a href="{{ Route('admin.posts.index') }}" class="btn btn-primary">Projects</a>
             </div>
         </div>
     </div>

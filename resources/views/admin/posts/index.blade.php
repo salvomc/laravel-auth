@@ -27,7 +27,7 @@
                                         <a href="#" class="btn btn-sm btn-primary">Modify</a>
                                         <a href="#" class="btn btn-sm btn-warning">Edit</a>
                                         <form action="#" class="d-inline-block" method="POST">
-                                            @scrf
+                                            @csrf
                                             @method('DELETE')
                                             <button href="#" class="btn btn-sm btn-danger">Modify</button>
                                         </form>
