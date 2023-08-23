@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Post;
 use App\Http\Requests\StorePostRequest;
 use App\Http\Requests\UpdatePostRequest;
+use App\Http\Controllers\Controller;
 
 class PostController extends Controller
 {
@@ -15,7 +16,8 @@ class PostController extends Controller
      */
     public function index()
     {
-        //
+        $posts = Post::all();
+        return view('admin.posts.index' , compact('posts'));
     }
 
     /**
