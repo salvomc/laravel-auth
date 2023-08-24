@@ -8,13 +8,13 @@ use Illuminate\Support\Str;
 
 class Post extends Model
 {
-    protected $fillable = ['titele', 'content', 'slug'];
+    protected $fillable = ['title', 'content', 'slug'];
 
     // una funzione standarta che modifica il titpo da Ciao mondo a Ciao-mondo 
     public static function generateSlug($title)
     {
         return Str::slug($title, '-');
     }
-    
+
     use HasFactory;
 }
