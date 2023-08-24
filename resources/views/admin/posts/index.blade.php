@@ -24,12 +24,12 @@
                                     <td>{{ $item->title }}</td>
                                     <td>{{ $item->slug }}</td>
                                     <td>
-                                        <a href="#" class="btn btn-sm btn-primary">Modify</a>
+                                        <a href="{{ Route('admin.posts.show', $item->id) }}" class="btn btn-sm btn-primary">Show</a>
                                         <a href="#" class="btn btn-sm btn-warning">Edit</a>
                                         <form action="#" class="d-inline-block" method="POST">
                                             @csrf
                                             @method('DELETE')
-                                            <button href="#" class="btn btn-sm btn-danger">Modify</button>
+                                            <button href="#" class="btn btn-sm btn-danger">Delete</button>
                                         </form>
                                     </td>
                                 </tr>
