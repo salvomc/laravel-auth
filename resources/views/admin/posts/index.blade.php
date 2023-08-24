@@ -6,6 +6,9 @@
             <div class="row">
                 <div class="col-12">
                     <h1>Projects</h1>
+                    <div class="btn-container">
+                        <a href="{{ Route('admin.posts.create') }}"><button class="btn btn-secondary">Create project</button></a>
+                    </div>
                 </div>
                 <div class="col-12">
                     <table class="table">
