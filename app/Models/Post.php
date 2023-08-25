@@ -8,7 +8,7 @@ use Illuminate\Support\Str;
 
 class Post extends Model
 {
-    protected $fillable = ['title', 'content', 'slug'];
+    protected $fillable = ['title', 'content', 'slug', 'image'];
 
     // una funzione standarta che modifica il titpo da Ciao mondo a Ciao-mondo 
     public static function generateSlug($title)

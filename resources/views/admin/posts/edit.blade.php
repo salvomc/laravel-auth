@@ -10,7 +10,7 @@
                 </div>
             </div>
             <div class="col-12 mb-5">
-                <form action=" {{ Route('admin.posts.update', $post->id) }} " method="POST">
+                <form action=" {{ Route('admin.posts.update', $post->id) }} " method="POST" enctype="multipart/form-data">
                     @csrf
                     @method('PUT')
                     <div class="form-group border p-4">

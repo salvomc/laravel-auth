@@ -10,7 +10,7 @@
                 </div>
             </div>
             <div class="col-12 mb-5">
-                <form action=" {{ Route('admin.posts.store') }} " method="POST">
+                <form action=" {{ Route('admin.posts.store') }} " method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="form-group border p-4">
                         <div class="row">
