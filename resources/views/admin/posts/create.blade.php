@@ -32,11 +32,10 @@
                                 <input type="text" name="slug" id="slug" placeholder="Enter slug"
                                     class="form-control" required>
                             </div>
-                            {{-- <div class="col-12 my-2">
-                                            <!-- Cover Image -->
-                                            <label class="control-label my-2">Cover Image</label>
-                                            <input type="text" name="cover_image" id="cover_image" placeholder="Enter cover image" class="form-control" value="{{ old('cover_image') ?? $comic->cover_image }}" required>
-                                        </div> --}}
+                            <div class="form-group my-5 d-flex flex-column">
+                                <label for="" class="control-label mb-3">Image</label>
+                                <input class="ps-3 form-control" type="file" id="image" name="image">
+                            </div>
                             <div class="col-12 text-center my-5">
                                 <!-- Submit Button -->
                                 <button type="submit" class="btn btn-success">Crea</button>
